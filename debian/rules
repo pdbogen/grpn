@@ -30,7 +30,6 @@ install-stamp: build-stamp
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
-	dh_desktop -pgrpn
 	install -D -m644 debian/grpn.desktop $(CURDIR)/debian/$(PACKAGE)/usr/share/applications/grpn.desktop
 	install -o root -m 0755 $(CURDIR)/$(PACKAGE) $(CURDIR)/debian/$(PACKAGE)/usr/bin/
 	install -d debian/grpn/usr/share/pixmaps
